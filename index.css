@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+body{
+    background: var(--verypaleblue);
+    background-image: url(/order-summary-component-main/images/pattern-background-desktop.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+main {
+    background: white;
+    max-width: 416px;
+    border-radius: 1.2rem;
+
+}
+main img{
+    width: 100%;
+    border-radius: 1.2em 1.2rem 0 0;
+}
+
+main section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2rem;
+    height: 100%;
+    width: 100%;
+}
+
+main section h1{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--darkblue);
+}
+
+main section span{
+    color: var(--desaturatedblue);
+    text-align: center;
+}
+
+main div.informations{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: var(--verypaleblue);
+    border-radius: 1rem;
+    padding: 1.5rem 1rem;
+    margin: 2rem 0;
+    transition: 0.2s;
+}
+
+
+main .informations .music-price{
+    display: flex;
+    align-items: center;
+
+}
+
+main div.informations .price{
+    display: flex;
+    flex-direction: column;
+
+}
+main div.informations img{
+    width: 48px;
+    margin-right: 1rem;
+}
+
+main div.informations .value{
+    color: var(--darkblue);
+    transition: color 0.3s;
+}
+
+main div.informations .value:hover{
+    color: #75ECCA;
+}
+
+main div.informations a{
+    color: var(--brightblue);
+    font-weight: 600;
+    font-size: 90%;
+}
+
+main div.informations a:hover{
+    color: var(--darkblue);
+    letter-spacing: 0.25px;
+    transition: all 0.4s;
+    text-decoration: none;
+}
+
+main button{
+    cursor: pointer;
+    color: white;
+    background: var(--brightblue);
+    font-weight: 600;
+    border: none;
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.2 );
+    transition: background 0.3s;
+}
+
+main button:hover{
+    background: #698DFF;
+}
+
+#cancel-order{
+    text-decoration: none;
+    color: var(--desaturatedblue);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    transition: color 0.3s;
+}
+
+#cancel-order:hover{
+    color: var(--darkblue);
+}
+
+@media screen and (max-width: 650px){
+    body{
+        background: url(/order-summary-component-main/images/pattern-background-mobile.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+
+/* Declarando variáveis em root para facilitarz */
+
+:root{
+
+    /* Primary */
+
+    --paleblue: hsl(225, 100%, 94%);
+    --brightblue: hsl(245, 75%, 52%);
+
+    /* Neutral */
+
+    --verypaleblue: hsl(225, 100%, 98%);
+    --desaturatedblue: hsl(224, 23%, 55%);
+    --darkblue: hsl(223, 47%, 23%);
+}
